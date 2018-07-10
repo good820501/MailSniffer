@@ -1,0 +1,246 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MailFinder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MailFinder.ico"
+IDI_ICONMAIN            ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MailFinder"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MailFinder 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,39,40,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "欢迎交流：QQ-58873082",IDC_STATIC,40,23,119,8
+END
+
+IDD_MAILFINDER_DIALOG DIALOGEX 0, 0, 392, 242
+STYLE WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "现在检查",IDOK,41,189,50,14
+    PUSHBUTTON      "退  出",IDCANCEL,259,189,50,14
+    GROUPBOX        "",IDC_STATIC,10,25,374,206
+    LTEXT           "邮件服务器地址",IDC_STATIC,37,49,56,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT1,106,45,150,14,ES_AUTOHSCROLL
+    LTEXT           "用",IDC_STATIC,37,72,8,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT2,106,68,149,14,ES_AUTOHSCROLL
+    LTEXT           "（如：163的邮箱为pop3.163.com）",IDC_STATIC,257,49,125,
+                    8
+    LTEXT           "密",IDC_STATIC,38,94,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT3,106,88,149,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "提",IDC_STATIC,38,119,9,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT4,107,115,149,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "（收到新邮件之后播放）",IDC_STATIC,293,119,89,8
+    PUSHBUTTON      "浏 览",IDC_BUTTON1,261,115,30,13
+    CONTROL         "每隔",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    104,141,32,10
+    EDITTEXT        IDC_EDIT5,140,137,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "分钟检查一次邮件",IDC_STATIC,168,141,65,8
+    PUSHBUTTON      "隐藏窗口",IDC_BUTTON2,112,189,50,14
+    PUSHBUTTON      "保存设置",IDC_BUTTON3,187,189,50,14
+    LTEXT           "户",IDC_STATIC,54,71,8,8,0,WS_EX_TRANSPARENT
+    LTEXT           "名",IDC_STATIC,72,72,8,8,0,WS_EX_TRANSPARENT
+    LTEXT           "码",IDC_STATIC,70,94,8,8,0,WS_EX_TRANSPARENT
+    LTEXT           "示",IDC_STATIC,54,119,8,8,0,WS_EX_TRANSPARENT
+    LTEXT           "音",IDC_STATIC,70,119,8,8,0,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_STATUS,111,211,99,11
+    PUSHBUTTON      "Button4",IDC_BUTTON4,320,187,50,14,NOT WS_VISIBLE
+    LTEXT           "欢迎交流：QQ-58873082",IDC_STATIC,283,214,87,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "双击提示窗后启动",IDC_STATIC,35,162,68,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT6,104,158,219,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏 览",IDC_BUTTON5,336,159,30,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MailFinder Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MailFinder\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MailFinder.EXE\0"
+            VALUE "ProductName", "MailFinder 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAPBACKGROUND    BITMAP  DISCARDABLE     "res\\skin.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_SHOWMSG             BITMAP  DISCARDABLE     "res\\MSN_MSG.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND_1              CURSOR  DISCARDABLE     "res\\harrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MailFinder(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MailFinder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

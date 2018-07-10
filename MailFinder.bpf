@@ -1,0 +1,12 @@
+USEUNIT(".\Common.cpp");
+USEUNIT(".\HoverEdit.cpp");
+USEUNIT(".\MailFinder.cpp");
+USEUNIT(".\MailFinderDlg.cpp");
+USEUNIT(".\MsgWnd.cpp");
+USEUNIT(".\StatusBarMsgWnd.cpp");
+USEUNIT(".\StdAfx.cpp");
+USEUNIT(".\XPButton.cpp");
+USERC(".\MailFinder.rc");
+USEFILE("vctobpr.log");
+
+#define WinMain
